@@ -1,15 +1,16 @@
 cmake_minimum_required(VERSION 3.6)
 
-project(test)
+project(mathtest)
 
 enable_testing()
 
 
-add_executable(test test.cpp)
+add_executable(mathtest test.cpp)
 
 
 
-target_link_libraries(test GTest::gtest_main mathlib)
+target_link_libraries(mathtest GTest::gtest_main mathlib)
 
 include (GoogleTest)
-gtest_discover_tests(test)
+gtest_discover_tests(mathtest)
+gtest_add_tests(TARGET mathtest SOURCES test.cpp)
