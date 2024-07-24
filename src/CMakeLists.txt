@@ -5,15 +5,15 @@ project(helloworld)
 
 add_subdirectory(lib)
 
-target_include_directories(addlib PRIVATE include)
-target_include_directories(addlib PRIVATE lib)
+target_include_directories(mathlib PRIVATE include)
+target_include_directories(mathlib PRIVATE lib)
 
 
 add_executable(helloworld main.cpp)
 
 
 
-target_link_libraries(helloworld addlib)
+target_link_libraries(helloworld mathlib)
 
 
 

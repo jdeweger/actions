@@ -1,5 +1,5 @@
 #include <iostream>
-#include "include/add.hpp"
+#include "include/math.hpp"
 
 int main(int argc, char* argv[])
 {

@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../include/add.hpp"
+#include "../include/math.hpp"
 
 TEST(HelloTest, BasicAssertions) {
 
@@ -14,5 +14,13 @@ TEST(AddTest, BasicAssertions) {
 
     EXPECT_EQ(add(1,2), 3);
 
+}
+
+
+TEST(MultTest, BasicAssertions) {
+
+    EXPECT_EQ(mult(1,2), 2);
+
+    EXPECT_EQ(mult(2,2), 4);
 }
 
